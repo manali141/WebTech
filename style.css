@@ -188,9 +188,12 @@ button.submit-btn {
     align-items: center;
     color:#2d3e2b
 }
+button.submit-btn:hover{
+  background-color: cadetblue;
+}
 .form-control:focus {
     outline: none;
-    border-color: green;
+    border-color: yellow;
     box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.1);
 }
 
