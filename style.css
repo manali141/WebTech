@@ -146,3 +146,72 @@ footer.site-footer {
 .category-footer button:hover {
   background: #388E3C;
 }
+
+article#categories {
+    padding-top: 80px;
+}
+
+.webtech-dis{
+  height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(https://static.vecteezy.com/system/resources/previews/072/503/126/non_2x/web3-ready-futuristic-digital-circuit-board-network-with-glowing-blue-lights-on-dark-background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.webTechInfo h1{
+  color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* contactUs form */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-control{
+width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-family: inherit;
+}
+button.submit-btn {
+    width: 100%;
+    /* height: 38px; */
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    align-items: center;
+    color:#2d3e2b
+}
+.form-control:focus {
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav.navbar.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    padding: 10px;
+    gap: 1.5rem;
+  }
+}
