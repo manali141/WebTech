@@ -28,7 +28,7 @@ const cardElement = [
 ]
 console.log(cardElement);
 let webCards ="";
-cardElement.forEach((data) => {
+cardElement.map((data) => {
  webCards += `<div class="category-card">
           <div class="category-image">
             <img alt="${data.altText}" src="${data.imgUrl}">

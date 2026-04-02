@@ -152,7 +152,7 @@ article#categories {
 }
 
 .webtech-dis{
-  height: 90vh;
+  height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(https://static.vecteezy.com/system/resources/previews/072/503/126/non_2x/web3-ready-futuristic-digital-circuit-board-network-with-glowing-blue-lights-on-dark-background-photo.jpg);
     background-size: cover;
     background-position: center;
@@ -195,6 +195,25 @@ button.submit-btn:hover{
     outline: none;
     border-color: yellow;
     box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.1);
+}
+
+/*Search Bar*/
+.searchBar {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+input#Search {
+    width: 25rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 15px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+input#Search:focus {
+border-color: #1e3a2f;
 }
 
 /* Responsive */
