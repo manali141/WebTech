@@ -1,17 +1,27 @@
 //Script for Search onchange
 const searchInput = document.querySelector("#Search");
-searchInput.addEventListener("input",() => {
-    const searchValue= searchInput.value.toLowerCase();
+// searchInput.addEventListener("input",() => {
+//     const searchValue= searchInput.value.toLowerCase();
+  
+//     const filteredCards = cardElement.filter((items) => 
+//         items.title.toLowerCase().includes(searchValue) ||
+//         items.description.toLowerCase().includes(searchValue)
+//     );
+//     cardsData(filteredCards);
+
+// })
+
+//Scripts for search using button
+const btnSearch = document.querySelector("#btnSearch");
+btnSearch.addEventListener("click", () => {
+const searchValue= searchInput.value.toLowerCase();
   
     const filteredCards = cardElement.filter((items) => 
         items.title.toLowerCase().includes(searchValue) ||
         items.description.toLowerCase().includes(searchValue)
     );
     cardsData(filteredCards);
-
 })
-
-//Scripts for search onclick
 
 
 

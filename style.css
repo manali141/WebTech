@@ -216,6 +216,18 @@ input#Search:focus {
 border-color: #1e3a2f;
 }
 
+button#btnSearch {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 40px;
+    margin: 10px;
+    /* display: flex; */
+    border-radius: 10px;
+    background-color: #40916c;
+    /* height: 41px; */
+    /* font-size: 15px; */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   nav.navbar.container {
