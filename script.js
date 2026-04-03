@@ -1,3 +1,22 @@
+//Script for Search onchange
+const searchInput = document.querySelector("#Search");
+searchInput.addEventListener("input",() => {
+    const searchValue= searchInput.value.toLowerCase();
+  
+    const filteredCards = cardElement.filter((items) => 
+        items.title.toLowerCase().includes(searchValue) ||
+        items.description.toLowerCase().includes(searchValue)
+    );
+    cardsData(filteredCards);
+
+})
+
+//Scripts for search onclick
+
+
+
+
+
 //On page load rendering card using JavaScript Array of Objects.
 //Array object for card
 const cardElement = [
@@ -26,23 +45,24 @@ const cardElement = [
         altText:'Vector icon of orange javascript shield, isolated simple flat il'
     }
 ]
-console.log(cardElement);
-let webCards ="";
-cardElement.map((data) => {
- webCards += `<div class="category-card">
-          <div class="category-image">
-            <img alt="${data.altText}" src="${data.imgUrl}">
-          </div>
-          <div class="category-content">
-            <h3>${data.title}</h3>
-            <p>${data.description}</p>
-          </div>
-          <div class="category-footer">
-            <button>View Project</button>
-          </div>
-     </div>`;
-})
 
 
+const cardsData = (data) => {
+    const webCards = data.map((item) => 
+     `<div class="category-card">
+            <div class="category-image">
+                <img alt="${item.altText}" src="${item.imgUrl}">
+            </div>
+            <div class="category-content">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+            </div>
+            <div class="category-footer">
+                <button>View Project</button>
+            </div>
+        </div>`).join("");
+    document.querySelector(".categories").innerHTML =webCards;
+}
 
-document.querySelector(".categories").innerHTML =webCards;
+
+cardsData(cardElement);
