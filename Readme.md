@@ -11,3 +11,10 @@ Features
     -Contact Form
     - Social Media
 - Using Fontawesome Icon
+
+# Assignment 2(Card Search Project)
+- Display cards dynamically using JavaScript
+- Used array of objects to store data
+- Rendered cards using DOM manipulation
+- Implemented real-time search using input event
+- Filter cards using JavaScript `.filter()` method
